@@ -1,33 +1,20 @@
-'use strict';
-
-function createCommonjsModule(fn, module) {
-	return module = { exports: {} }, fn(module, module.exports), module.exports;
-}
-
-var Marmott = createCommonjsModule(function (module) {
 /*
 
   main class
  */
 var Marmott;
 
-module.exports = {
-  a: Marmott = (function() {
-    function Marmott() {}
+Marmott = (function() {
+  var class1;
 
-    return Marmott;
+  function Marmott() {
+    return class1.apply(this, arguments);
+  }
 
-  })(),
-  b: 51
-};
-});
+  class1 = Marmott.a = 44;
 
-var main = createCommonjsModule(function (module) {
-var a;
+  return Marmott;
 
-a = Marmott;
+})();
 
-alert(a.b);
-});
-
-module.exports = main;
+alert((new Marmott).a);

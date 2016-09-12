@@ -6,4 +6,10 @@
 
 ###
 
-module.exports = a: class Marmott, b: 51
+class Marmott
+  constructor:
+    @a = 44
+
+a = 42
+
+`export { Marmott, a }`

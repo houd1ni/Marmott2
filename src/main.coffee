@@ -1,3 +1,3 @@
-a = require './Marmott.coffee'
+`import { Marmott } from './Marmott.coffee'`
 
-alert a.b
+alert (new Marmott).a
