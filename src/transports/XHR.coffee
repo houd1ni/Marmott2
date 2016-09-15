@@ -30,8 +30,7 @@ class XHR
     callback = getf t.cb
     headers = O.h || {}
 
-    t.xhr = new (w.XMLHttpRequest || ActiveXObject('Microsoft.XMLHTTP')
-    )
+    t.xhr = new (w.XMLHttpRequest || ActiveXObject('Microsoft.XMLHTTP'))
     t.xhr.onreadystatechange = ->
       e = this    # event
       state =  e.readyState
