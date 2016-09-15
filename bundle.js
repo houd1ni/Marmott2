@@ -1,3 +1,12 @@
+var XHR;
+
+XHR = (function() {
+  function XHR() {}
+
+  return XHR;
+
+})();
+
 /*
 
   main class
@@ -5,13 +14,9 @@
 var Marmott;
 
 Marmott = (function() {
-  var class1;
-
-  function Marmott() {
-    return class1.apply(this, arguments);
+  function Marmott(O) {
+    this.O = O;
   }
-
-  class1 = Marmott.a = 44;
 
   return Marmott;
 

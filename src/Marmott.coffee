@@ -6,10 +6,13 @@
 
 ###
 
+`import { XHR } from './transports/XHR.coffee'`
+
+
 class Marmott
-  constructor:
-    @a = 44
+  constructor: (@O)->
+    
+    
 
-a = 42
 
-`export { Marmott, a }`
+`export { Marmott }`
