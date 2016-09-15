@@ -23,7 +23,7 @@ w = window
 class XHR
 
   default_headers =
-    'X-Requested-With':' XMLHttpRequest'
+    'X-Requested-With': 'XMLHttpRequest'
 
   constructor: (O)->
     t = this

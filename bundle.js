@@ -33,7 +33,7 @@ XHR = (function() {
   var default_headers;
 
   default_headers = {
-    'X-Requested-With': ' XMLHttpRequest'
+    'X-Requested-With': 'XMLHttpRequest'
   };
 
   function XHR(O) {
