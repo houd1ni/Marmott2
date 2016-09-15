@@ -1,4 +1,5 @@
 import coffee from 'rollup-plugin-coffee-script'
+import uglify from 'rollup-plugin-uglify'
 
 export default {
   entry: 'src/main.coffee',
@@ -6,5 +7,6 @@ export default {
   dest: 'bundle.js',
   plugins: [
     coffee(),
+    uglify()
   ]
 }
